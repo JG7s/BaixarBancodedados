@@ -33,7 +33,7 @@ systemctl start chronyd
 
 
 apt-get install vim wget curl tcpdump perl sshpass btop htop telnet gnupg gnupg2 apt-transport-https sudo nmap libsnmp-dev build-essential lsb-release ncdu htop zstd -y
-wget remontti.com.br/debian; bash debian; su -
+
 
 echo # Adiciona o repositório do PostgreSQL 16
 sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -100,3 +100,6 @@ wget https://mega.nz/linux/repo/Debian_12/amd64/megacmd-Debian_12_amd64.deb
 dpkg -i megacmd-Debian_12_amd64.deb
 apt --fix-broken install -y
 dpkg -i megacmd-Debian_12_amd64.deb
+
+
+wget remontti.com.br/debian; bash debian; su -
