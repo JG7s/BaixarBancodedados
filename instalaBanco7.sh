@@ -8,7 +8,7 @@ echo # "Atualizando arquivo /etc/apt/source.list" #######
 echo ####################################################
 
 # Define o IP do servidor Zabbix #
-IP_SERVIDOR="172.17.1.6"
+IP_SERVIDOR="172.17.1."
 
 sed -i 's|deb http://deb.debian.org/debian/ bookworm main non-free-firmware|& contrib non-free|' /etc/apt/sources.list
 sed -i 's|deb-src http://deb.debian.org/debian/ bookworm main non-free-firmware|& contrib non-free|' /etc/apt/sources.list
